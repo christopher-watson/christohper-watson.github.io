@@ -1,0 +1,47 @@
+
+
+.container{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30px auto auto;
+  grid-template-rows: 50px 2fr 2fr 1fr 20px;
+  grid-template-areas:
+    "sb header"
+    "sb bio photo"
+    "sb pg "
+    "sb contact"
+    "sb footer";
+}
+
+.sidebar{
+  grid-area: sb;
+  background: grey;
+}
+
+.header{
+  grid-area: header;
+  background: blue;
+}
+
+.bio{
+  grid-area: bio;
+  background: grey;
+}
+
+.photo{
+  grid-area: photo;
+  background: blue;
+}
+
+.photo-grid{
+  grid-area: pg;
+}
+
+.contact{
+  grid-area: contact;
+}
+
+.footer{
+  grid-area: footer;
+}
+
