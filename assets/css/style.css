@@ -1,5 +1,6 @@
 :root{
   --grey: #6C757C;
+  --red: #FC0D1C;
 }
 
 html{
@@ -9,6 +10,8 @@ html{
 body{
   margin: 0 20px 0 0;
   background: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
 
 ul{
@@ -20,7 +23,7 @@ ul{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 80px 1fr;
-  grid-template-rows: 50px repeat(3, auto) 60px;
+  grid-template-rows: auto repeat(3, auto) auto;
   grid-template-areas:
     "sb logo header"
     "sb logo content-1"
@@ -33,12 +36,32 @@ ul{
   grid-area: sb;
 }
 
-.logo{
+.link{
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
 
+.logo{
+  font-size: 100px;
+  margin-left: -60px
 }
 
 .header{
   grid-area: header;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.header-under{
+  font-size: 33px;
+  font-weight: 100;
+}
+
+.header-span{
+  color: var(--red);
 }
 
 .bio-box{
@@ -85,6 +108,7 @@ ul{
   margin: 0;
   padding: 0;
   line-height: 20px;
+  text-transform: lowercase;
 }
 
 #footer-span{
