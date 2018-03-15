@@ -1,47 +1,75 @@
+:root{
+  --grey: #6C757C;
+}
 
+html{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 20px 0 0;
+  background: white;
+}
 
 .container{
   display: grid;
-  width: 100%;
-  grid-template-columns: 30px auto auto;
-  grid-template-rows: 50px 2fr 2fr 1fr 20px;
+  grid-gap: 20px;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 50px repeat(3, auto) 50px;
   grid-template-areas:
-    "sb header"
-    "sb bio photo"
-    "sb pg "
-    "sb contact"
-    "sb footer";
+    "sb logo header"
+    "sb logo content-1"
+    "sb logo content-2"
+    "sb logo content-3"
+    "sb logo footer";
 }
 
 .sidebar{
   grid-area: sb;
-  background: grey;
+}
+
+.logo{
+
 }
 
 .header{
   grid-area: header;
-  background: blue;
+}
+
+.bio-box{
+  grid-area: content-1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "bio pic"
 }
 
 .bio{
   grid-area: bio;
-  background: grey;
 }
 
 .photo{
-  grid-area: photo;
-  background: blue;
+  grid-area: pic;
+}
+
+.pic{
+  width: 100px;
 }
 
 .photo-grid{
-  grid-area: pg;
+  grid-area: content-2;
 }
 
 .contact{
-  grid-area: contact;
+  grid-area: content-3;
 }
 
 .footer{
   grid-area: footer;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
 }
 
