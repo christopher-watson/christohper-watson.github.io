@@ -138,7 +138,13 @@ ul {
 .process {
   grid-area: content-2;
   margin: 0;
-  justify-self: center;
+  /* justify-self: center; */
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto-fit);
+  grid-template-areas:
+    " a b c ",
+    " d e f ";
 }
 
 .process-pic{
@@ -149,15 +155,27 @@ ul {
 }
 
 .proc-pic1{
-  grid-area: 1;
+  grid-area: a;
 }
 
 .proc-pic2{
-  grid-area: 2;
+  grid-area: b;
 }
 
 .proc-pic3{
-  grid-area: 3;
+  grid-area: c;
+}
+
+.desc1{
+  grid-area: d;
+}
+
+.desc2{
+  grid-area: e;
+}
+
+.desc3{
+  grid-area: f;
 }
 
 .photo-grid {
