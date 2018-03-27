@@ -24,13 +24,27 @@ ul {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 150px 120px 830px 200px auto;
-  grid-template-rows: 150px repeat(5, auto);
+  grid-template-rows: 100vh 150px repeat(5, auto);
   grid-template-areas: 
-    "sb logo header . gap" 
-    "sb logo content-1 ss gap" 
-    "sb logo content-2 . gap" 
-    "sb logo content-3 . gap" 
-    "sb logo . . gap" "sb logo footer . gap";
+    "top  top   top        top  top"
+    "sb   logo  header     .    gap" 
+    "sb   logo  content-1  ss   gap" 
+    "sb   logo  content-2  .    gap" 
+    "sb   logo  content-3  .    gap" 
+    "sb   logo  .          .    gap" 
+    "sb   logo  footer     .    gap";
+}
+
+.landing-area{
+  grid-area: top;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.landing-pic{
+  height: 100vh;
+  min-width: 100vw;
+  object-fit: cover;
 }
 
 .sidebar {
@@ -74,9 +88,8 @@ ul {
 
 .logo {
   font-size: 200px;
-  margin-left: -120px;
-  margin-top: -20px;
-  margin-right: 20px;
+  grid-area: sb;
+  margin-left: 50px;
 }
 
 .header {
