@@ -30,8 +30,7 @@ ul {
     "sb logo content-1 ss gap" 
     "sb logo content-2 . gap" 
     "sb logo content-3 . gap" 
-    "sb logo . . gap"
-    "sb logo footer . gap";
+    "sb logo . . gap" "sb logo footer . gap";
 }
 
 .sidebar {
@@ -105,11 +104,11 @@ ul {
   line-height: 25px;
 }
 
-.bio-top-line{
+.bio-top-line {
   font-size: 18px;
 }
 
-.bio-underline{
+.bio-underline {
   text-decoration: underline;
   text-decoration-color: var(--red);
 }
@@ -124,12 +123,12 @@ ul {
   position: absolute;
 }
 
-.pic1{
+.pic1 {
   height: 100%;
   width: 100%;
 }
 
-.pic2{
+.pic2 {
   height: 100%;
   width: 100%;
   visibility: hidden;
@@ -138,43 +137,50 @@ ul {
 .process {
   grid-area: content-2;
   margin: 0;
-  /* justify-self: center; */
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto-fit);
-  grid-template-areas:
-    " a b c ",
-    " d e f ";
 }
 
-.process-pic{
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b c "
+    "d e f ";
+}
+
+.process-pic {
   width: 250px;
   height: 350px;
   object-fit: cover;
-  margin: 0 10px 0 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.proc-pic1{
+.proc-pic1 {
   grid-area: a;
 }
 
-.proc-pic2{
+.proc-pic2 {
   grid-area: b;
 }
 
-.proc-pic3{
+.proc-pic3 {
   grid-area: c;
 }
 
-.desc1{
+.process-desc{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.desc1 {
   grid-area: d;
 }
 
-.desc2{
+.desc2 {
   grid-area: e;
 }
 
-.desc3{
+.desc3 {
   grid-area: f;
 }
 
