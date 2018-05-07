@@ -234,6 +234,7 @@
  .work-container {
    position: relative;
    width: 90%;
+   height: 100%;
    margin: 20px auto;
    background-color: var(--black);
    border: 5px solid var(--black);
