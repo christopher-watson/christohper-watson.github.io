@@ -4,6 +4,7 @@
    --red: #FC0D1C;
    --black: #161718;
    --opaque: #16171880;
+   --white: #FFFFFF;
  }
 
  html {
@@ -206,6 +207,7 @@
 
  .process-desc{
    font-size: 20px;
+   color: var(--white);
  }
 
  .text-div{
@@ -276,7 +278,7 @@
  .text {
    color: var(--black);
    font-size: 20px;
-   background: white;
+   background:var(--white);
    padding: 10px 15px;
    border-radius: 15px;
  }
