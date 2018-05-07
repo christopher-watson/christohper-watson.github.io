@@ -59,6 +59,7 @@
 
  .link:hover {
    text-decoration: underline;
+   -webkit-text-decoration-color: var(--red); /*safari fallback*/
    text-decoration-color: var(--red);
  }
 
@@ -135,6 +136,7 @@
    grid-area: "bio";
    line-height: 25px;
    width: 100%;
+   margin-top: 20px;
  }
 
  .top-line {
@@ -143,6 +145,7 @@
 
  .bio-underline {
    text-decoration: underline;
+   -webkit-text-decoration-color: var(--red); /*safari fallback*/
    text-decoration-color: var(--red);
  }
 
