@@ -31,18 +31,17 @@
  /* grid  */
  .container {
    display: grid;
-   grid-gap: 20px;
-   margin: 0 auto;
-   grid-template-columns: 150px 120px 830px;
-   /* grid-template-columns: 150px minmax(120px, max-content) 830px 200px auto; */
-   grid-template-rows: 250px repeat(5, auto);
+   grid-gap: 10px;
+   margin: 0;
+   grid-template-columns: minmax(25px, 1fr) 150px 120px minmax(750px, 1000px) minmax(25px, 1fr);
+   grid-template-rows: 250px repeat(5, min-content);
    grid-template-areas: 
-    "sb   logo  header    " 
-    "sb   logo  content-1 " 
-    "sb   logo  content-2 " 
-    "sb   logo  content-3 " 
-    "sb   logo  .         " 
-    "sb   logo  footer    ";
+    " . sb   logo  header    . " 
+    " . sb   logo  content-1 . " 
+    " . sb   logo  content-2 . " 
+    " . sb   logo  content-3 . " 
+    " . sb   logo  .         . " 
+    " . sb   logo  footer    . ";
  }
 
  /* sidebar  */
