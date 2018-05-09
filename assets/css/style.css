@@ -305,7 +305,7 @@
 
 /* ---------------------------------media-------------------------------- */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
   body {
   margin: 0 20px 0 0;
   font-size: 1rem;
