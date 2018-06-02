@@ -191,6 +191,7 @@
    grid-template-rows: auto;
    grid-template-areas: "a b c";
    margin-top: 20px;
+   grid-gap: 20px;
  }
 
  .process-pic {
@@ -319,6 +320,19 @@
   }
 }
 
+@media only screen and (max-width: 770px ){
+  .process-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "a"
+      "b"
+      "c";
+  }  
+}
+
+
 @media only screen and (max-width: 415px) {
   body {
   margin: 0 20px 0 0;
@@ -440,6 +454,6 @@
 
 /* footer */
 .footer {
-  font-size: .9rem;
+  font-size: .7rem;
 }
 }
