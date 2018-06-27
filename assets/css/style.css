@@ -428,7 +428,7 @@
 
 .process-pic {
   width: 1fr;
-  height: auto;
+  height: .3fr;
   object-fit: cover;
   margin: 0 auto;
   border: 5px solid var(--black);
